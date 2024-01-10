@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let R1;
+        let R2;
+        let R3;
+        let ResistNuméro1=(parseIn(prompt(R1)))
+        let ResistNuméro2=(parseInt(prompt(R2)))
+        let ResistNuméro3=(parseInt(prompt(R3)))
+        console.log("Résistance série est:"+ ResistNuméro1+ResistNuméro2+ResistNuméro3)
+        console.log("Résistance parallèle est:"+ (ResistNuméro1*ResistNuméro2*ResistNuméro3)/(ResistNuméro1*ResistNuméro2+ResistNuméro2*ResistNuméro3+ResistNuméro1*ResistNuméro3))
+        // version
+        let choix1
+        let choix2=1
+        let choix3=2
+        let choix=(parseInt(prompt(choix1)))
+        alert("faire choix entre:1 et 2")
+        if (choix==choix1) {
+            console.log("Résistance série:"+ ResistNuméro1+ResistNuméro2+ResistNuméro3)
+            
+        } else {
+          console.log("Résistance parallèle est:"+(ResistNuméro1*ResistNuméro2*ResistNuméro3)/(ResistNuméro1*ResistNuméro2+ResistNuméro2*ResistNuméro3+ResistNuméro1*ResistNuméro3))   
+        }
+ </script>
+</body>
+</html>
